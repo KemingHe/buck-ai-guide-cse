@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "buck-ai-guide-cse-faculties"
+version = "0.1.0"
+description = "Streamit RAG app utilizing LangChain, Openai, and Pinecone to recommend OSU CSE Department faculties to users."
+authors = ["Keming He <keminghe.career@gmail.com>", "Noah Olsen <noah24olsen+hackohio[at]gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.12.*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
