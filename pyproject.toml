@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Streamit RAG app utilizing LangChain, Openai, and Pinecone to recommend OSU CSE Department faculties to users."
 authors = ["Keming He <keminghe.career@gmail.com>", "Noah Olsen <noah24olsen+hackohio[at]gmail.com>"]
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "3.12.*"
@@ -11,7 +12,7 @@ python-dotenv = "^1.0.1"
 langchain = "^0.3.4"
 langchain-openai = "^0.2.3"
 streamlit = "^1.39.0"
-
+pydantic = "^2.9.2"
 
 [build-system]
 requires = ["poetry-core"]
