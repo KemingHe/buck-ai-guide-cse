@@ -145,8 +145,9 @@ if "chat_history" not in st.session_state:
 
 # ------------------------------------------------------------------------------
 # Web app page setup.
-st.set_page_config(page_title="Buck-AI-Guide")
-st.title("Buck-AI-Guide")
+st.set_page_config(page_title="🌰 Buck-AI-Guide")
+st.title("🌰 Buck-AI-Guide")
+st.info("Welcome to Buck-AI-Guide! I’m here to help you explore AI research at OSU by connecting you with professors or answering general AI concepts. Ask me anything!")
 
 # Print the converstation history.
 for message in st.session_state.chat_history:
