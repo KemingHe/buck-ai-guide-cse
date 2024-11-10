@@ -1,3 +1,6 @@
+# Datetime import.
+from datetime import datetime
+
 # Env import.
 from os import getenv
 from dotenv import load_dotenv
@@ -40,9 +43,13 @@ vector_store = PineconeVectorStore(index=index, embedding=embeddings)
 # ------------------------------------------------------------------------------
 # Get the top relevant references from the Pinecone vector store.
 def get_relevant_refs(query):
+    current_year: int = datetime.now().year
     refs = vector_store.similarity_search(
         query=query,
-        k=5
+        k=5,
+        filter={
+            'lastmod_year': {'$gte': current_year - 1}
+        }
     )
     return refs
 
