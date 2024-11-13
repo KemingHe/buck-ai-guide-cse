@@ -1,6 +1,9 @@
 # Mac system files
 .DS_Store
 
+# Local vscode settings
+.vscode
+
 # Ruff cache
 .ruff_cache/
 
