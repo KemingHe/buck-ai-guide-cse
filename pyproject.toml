@@ -15,6 +15,9 @@ streamlit = "^1.39.0"
 pinecone = "^5.3.1"
 langchain-pinecone = "^0.2.0"
 
+[tool.poetry.group.dev.dependencies]
+watchdog = "^6.0.0"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
